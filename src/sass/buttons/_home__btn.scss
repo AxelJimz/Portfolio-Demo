@@ -1,0 +1,30 @@
+.home__btn {
+    padding: 15px 25px;
+    font-family: $alice;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background-color: $orange;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    img {
+        margin: 0.5rem 0 0 1rem;
+        
+    }
+}
+
+.home__btn:active {
+    background-color: $black;
+}
+
+@media (hover : hover) {
+    .home__btn:hover {
+        background-color: $black;
+    }
+}

@@ -1,0 +1,12 @@
+.navbar__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width:992px) {
+        li:nth-last-child(1) {
+            display: none;
+        }
+    }
+}

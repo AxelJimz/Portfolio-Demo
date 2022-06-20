@@ -1,0 +1,38 @@
+.home__animation {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 38px;
+    padding: 0.5rem 0;
+    margin: 0 0 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    border: 1.5px solid $black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.home__animation-line {
+    width: 2px;
+    height: 8px;
+    background-color: $orange;
+}
+
+.home__animation:active {
+    .home__animation-line {
+        margin: 25% 0 0 0;
+    }
+}
+
+@media (hover: hover) {
+    .home__animation:hover {
+        .home__animation-line {
+            margin: 25% 0 0 0;
+        }
+    }
+}
+
+

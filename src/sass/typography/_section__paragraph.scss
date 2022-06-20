@@ -1,0 +1,24 @@
+.home__paragraph,
+.about__paragraph,
+.portfolio__paragraph,
+.portfolio__project-paragraph {
+    margin: 0 0 1.5rem 0;
+    font-family: $alice;
+    font-size: 1.5rem;
+    color: $brown;
+}
+
+.home__paragraph > b {
+    color: $orange;
+}
+
+.about__paragraph,
+.portfolio__paragraph,
+.portfolio__project-paragraph {
+    font-size: 0.875rem;
+    line-height: 26px;
+}
+
+.portfolio__paragraph {
+    margin: 0;
+}
