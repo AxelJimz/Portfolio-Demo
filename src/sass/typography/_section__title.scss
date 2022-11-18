@@ -1,0 +1,35 @@
+.home__title,
+.about__title,
+.services__title,
+.portfolio__title,
+.testimonials__title,
+.contact__title {
+    margin: 0.5rem 0 1.5rem 0;
+    font-family: $playfair;
+    font-size: 45px;
+    color: $black;
+}
+
+.about__title,
+.services__title,
+.portfolio__title,
+.testimonials__title,
+.contact__title {
+    font-weight: 400;
+}
+
+.portfolio__project-title {
+    margin: 1rem 0 0.5rem 0;
+    font-family: $playfair;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $black;
+}
+
+.contact__title  {
+    color: $white;
+
+    b {
+        color: $orange;
+    }
+}

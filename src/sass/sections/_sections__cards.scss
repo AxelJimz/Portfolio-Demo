@@ -1,0 +1,211 @@
+// * About Cards
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+
+    @media screen and (min-width : 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about__cards--networks {
+    margin: 4rem 0 0 0;
+
+    @media screen and (min-width : 768px) {
+        grid-column: 1 / 4;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width : 992px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.about__card {
+    display: flex;
+
+    .about__card-figure {
+        margin: 0 1rem 0 0;
+        min-width: 50px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+        background-color: $orange;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    
+    .about__card-info {
+        display: grid;
+        place-content: center;
+    }
+
+    .about__card-title {
+        margin: 0 0 0.5rem 0;
+        font-family: $alice;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $brown;
+    }
+
+    .about__card-paragraph {
+        font-family: $playfair;
+        font-size: 1rem;
+        color: $black;
+    }
+}
+
+.about__card--network {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDF3F2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    .about__card-figure {
+        margin: 0 0 1rem 0;
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-content: center;
+    }
+
+    .about__card-title {
+        font-family: $playfair;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $black;
+    }
+    .about__card-paragraph {
+        margin: 0 0 1.5rem 0;
+        font-family: $alice;
+        font-size: 0.875rem;
+        color: $brown;
+    }
+
+    .about__card-btn{
+        width: 37px;
+        height: 37px;
+        display: grid;
+        place-content: center;
+        background-color: $white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        overflow: hidden;
+
+        img {
+           filter: grayscale(0);
+           -webkit-filter: grayscale(0);
+}
+    }
+}
+
+.about__card--network:active,
+.services__card:active {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+.about__card--network:active > .about__card-btn,
+.services__card:active > .services__card-btn  {
+    border: 1px solid $orange;
+}
+
+.services__card:active > .services__card-figure {
+    opacity: 1;
+}
+
+@media (hover : hover) {
+    .about__card--network:hover,
+    .services__card:hover {
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+    }
+
+    .about__card--network:hover > .about__card-btn,
+    .services__card:hover > .services__card-btn {
+        border: 1px solid $orange;
+    }
+
+    .services__card:hover > .services__card-figure {
+        opacity: 1;
+    }
+}
+
+// * Services Cards
+
+.services__cards {
+    margin: 0 0 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.services__card {
+    padding: 3rem 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #0000000f;
+
+    .services__card-figure {
+        margin: 0 0 1rem 0;
+        width: 40px;
+        height: 40px;
+      opacity: 0.5;
+    }
+
+    .services__card-title {
+        margin: 0 0 1rem 0;
+        font-family: $playfair;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $black;
+    }
+
+    .services__card-paragraph {
+        margin: 0 0 1.5rem 0;
+        font-family: $alice;
+        font-size: 0.875rem;
+        line-height: 26px;
+        color: $brown;
+    }
+
+    .services__card-btn{
+        width: 37px;
+        height: 37px;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px #e8e8e8;
+    }
+}

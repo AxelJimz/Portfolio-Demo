@@ -1,0 +1,95 @@
+.home,
+.about,
+.services,
+.portfolio,
+.testimonials,
+.contact {
+    padding: $padding-section;
+    z-index: 500;
+
+    @media screen and (min-width: 768px) {
+        padding: $padding-section-md;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding: $padding-section-lg;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding: 4rem 9.438rem 4rem 22.25rem;
+    }
+}
+
+// * Styles Section Home
+
+.home {
+    position: relative;
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home *,
+.about *,
+.services *,
+.portfolio *,
+.contact * {
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+// * Styles Section About
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    background-color: $white;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.portfolio,
+.testimonials {
+    background-color: $white;
+}
+
+.portfolio--skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    background-color: $light;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.testimonials {
+    overflow: hidden;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    gap: 1.25rem;
+    background-color: $black;
+    color: $white;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+    }
+}

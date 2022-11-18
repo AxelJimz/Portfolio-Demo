@@ -1,0 +1,21 @@
+.navbar__option {
+    position: relative;
+    padding: 5px 0;
+    margin: 0 0 0.875rem 0;
+    font-size: $fourteen;
+    font-weight: 400;
+    color: $black;
+}
+
+
+.navbar__option:active {
+    margin: 0 0 0.875rem  1rem;
+    color: $orange;
+}
+
+@media (hover : hover) {
+    .navbar__option:hover {
+        margin: 0 0 0.875rem  1rem;
+        color: $orange;
+    }
+}

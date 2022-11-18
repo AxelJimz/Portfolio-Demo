@@ -1,0 +1,21 @@
+.home__span,
+.about__span,
+.services__span,
+.portfolio__span,
+.testimonials__span {
+    font-family: $alice;
+    font-size: 1.5rem;
+    color: $orange;
+    text-transform: uppercase;
+}
+
+.about__span,
+.services__span,
+.portfolio__span,
+.testimonials__span {
+    font-size: 0.875rem;
+}
+
+.home__span {
+    text-transform: none;
+}

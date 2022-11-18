@@ -1,0 +1,31 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+    font-family: $playfair;
+    background-color: #fff;
+    z-index: 1000;
+
+    * {
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -ms-transition: $transition;
+        -o-transition: $transition;
+}
+
+    @media screen and (min-width: 768px) {
+        padding: 0 3rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: 224px;
+        height: 100vh;
+        padding: 25px;
+        border-right: 0.5px solid rgba($orange, 0.1);
+    }
+}
+

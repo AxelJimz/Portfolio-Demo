@@ -1,0 +1,110 @@
+.services__info,
+.testimonials__info {
+  margin: 0 0 4rem 0;
+  text-align: center;
+}
+
+.portfolio__info {
+  margin: 0 0 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.portfolio__info--skills {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.portfolio__progress {
+  margin: 1.5rem 0 0 0;
+
+  li {
+    margin: 0 0 1.5rem 0;
+  }
+
+  li:nth-last-child(1) {
+    margin: 0;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3,
+  p {
+    margin: 0 0 1.125rem 0;
+    font-family: $playfair;
+    font-size: 0.875rem;
+    color: $black;
+    font-weight: 500;
+  }
+
+  p {
+    font-family: $alice;
+  }
+
+  .bar {
+    height: 0.5rem;
+    background-color: $lightblack;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-color: $brown;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+    }
+
+    .bar-90 {
+      width: 90%;
+    }
+
+    .bar-75 {
+      width: 75%;
+    }
+
+    .bar-20 {
+      width: 20%;
+    }
+  }
+}
+
+.testimonials__info {
+  margin: 0;
+}
+
+.testimonials__users {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact__info {
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / 4;
+    
+  }
+}

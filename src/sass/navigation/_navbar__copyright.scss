@@ -1,0 +1,17 @@
+.navbar__copyright {
+  display: none;
+  font-size: $fourteen;
+      color: $gray;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+
+    li {
+      
+
+      span {
+        color: $black;
+      }
+    }
+  }
+}

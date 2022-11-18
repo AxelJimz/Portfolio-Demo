@@ -1,0 +1,27 @@
+.navbar__options {
+  position: absolute;
+  top: 100%;
+  left: -150%;
+  width: 100%;
+  padding: 10px;
+  background-color: $white;
+
+  li:nth-last-child(1) {
+    a {
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+  position: relative;
+   top: 0;
+   left: 0;
+   height: 100%;
+   padding: 0;
+   margin: 0 0 3rem 0;
+  }
+}
+
+.navbar__options--active {
+  left: 0;
+}

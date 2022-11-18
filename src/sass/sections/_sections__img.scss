@@ -1,0 +1,10 @@
+.about__img,
+.portfolio__img,
+.testimonials__img {
+    display: grid;
+    place-content: center;
+}
+
+.portfolio__project-img {
+    overflow: hidden;
+}

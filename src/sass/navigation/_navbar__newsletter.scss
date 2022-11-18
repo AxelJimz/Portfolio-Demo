@@ -1,0 +1,46 @@
+.navbar__newsletter {
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    padding: 1.875rem 0 0 0;
+    margin: 0 0 3rem 0;
+    border-top: 1px solid $lightblack;
+
+    li:nth-child(1) {
+        margin: 0 0 0.75rem 0;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+    }
+
+    input {
+      width: 100%;
+      padding: 0 0 0.75rem 0;
+      margin: 0 0.5rem 0 0;
+      font-family: $alice;
+      font-size: $fourteen;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $lightblack;
+    }
+
+    input:focus {
+      border-bottom: 1px solid $gray;
+    }
+
+    ::placeholder { 
+        font-family: $alice;
+        font-size: $fourteen;
+        color: $gray; 
+    }
+
+    button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+  }
+}
